@@ -1,0 +1,7 @@
+[package]
+name = "generatingrandom"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
+rand = "0.4.0"
