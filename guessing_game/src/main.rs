@@ -9,11 +9,10 @@ fn main() {
 	
 	println!("Guess the number!");
 	let secret_number = rand::thread_rng().gen_range(1, 100);
+	println!("The secret number is: {}", secret_number);
 
 	loop {
 		println!("Please input your guess.");
-	
-		println!("The secret number is: {}", secret_number);
 
 		// :: an associated function ... 
 		// Some languages call this static methods ... 
@@ -23,6 +22,7 @@ fn main() {
 
 		// trim() eliminates the new line.
 		// :type -> we are anotating the variable with a type.
+
 		let guess: u32 = match guess.trim().parse() {
 			Ok(num) => num,
 			Err(_) => {
@@ -30,6 +30,7 @@ fn main() {
 				continue;
 			}
 		};
+
 		//io::stdin().read_line(&mut guess).expect("Failed to read line");
 		println!("You guessed: {}", guess);
 
