@@ -1,6 +1,12 @@
 fn main() {
 	//let tup: (i32, i32, i32) = (1, 2, 3);
 	let tup = (1, 2, 3);
+	// Destructuring a tuple ... 
+	let (a, b, c) = tup;
+	println!("{:?}", a);
+	println!("{:?}", b);
+	println!("{:?}", c);
+
 	println!("{:?}", tup.0);
 	println!("{:?}", tup.1);
 	println!("{:?}", tup.2);
@@ -11,4 +17,7 @@ fn main() {
 	if tup2.2 {
 		println!("{:?}", "Ok alv");
 	}
+
+	println!("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
 }
