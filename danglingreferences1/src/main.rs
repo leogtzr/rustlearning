@@ -8,6 +8,7 @@ fn main() {
 
 // The following code fails at compile time:
 fn dangle() -> &String {				// Returns a reference to a String.
+	// "s" will be deallocated.
 	let s: String = "Holis";
 	&s
 }						// Here, "s" goes out of scope.
