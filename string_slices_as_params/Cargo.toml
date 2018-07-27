@@ -1,0 +1,6 @@
+[package]
+name = "string_slices_as_params"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
