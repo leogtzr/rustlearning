@@ -14,5 +14,6 @@ fn main() {
 		active: true,
 	};
 	println!("{:?}", user);
+	println!("{:?}", user.email);
 
 }
