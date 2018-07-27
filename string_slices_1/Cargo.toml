@@ -1,5 +1,5 @@
 [package]
-name = "first_word"
+name = "string_slices_1"
 version = "0.1.0"
 authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
 
