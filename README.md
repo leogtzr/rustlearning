@@ -1,2 +1,2 @@
 # rustlearning
-I am learning rust ... just a bunch of testing files.
+I am learning rust ... so just a bunch of random files ... 
