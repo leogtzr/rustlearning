@@ -5,7 +5,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
-	fn area(&self) -> u32 {
+	fn area(&self) -> u32 {					// &mut self to change the parameters.
 		self.width * self.height
 	}
 }
