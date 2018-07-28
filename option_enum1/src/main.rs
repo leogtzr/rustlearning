@@ -1,3 +1,8 @@
 fn main() {
-    println!("Hello, world!");
+    let some_number = Some(5);
+    let some_string = Some("a string");
+    let absent_number: Option<i32> = None;
+
+    let other: Option<u64> = Some(4u64);
+    println!("{:?}", other);
 }
