@@ -2,13 +2,13 @@
 
 readonly WORK_DIR=$(dirname $(readlink --canonicalize-existing "${0}"))
 
-time while read dir; do
+while read dir; do
 	echo -n "Cleaning: ${dir}"
 	(
-		cd "${dir}"
+		cd "${dir}" || continue
 		cargo clean 2> /dev/null
 	)
 	echo ", done"
-done < <(find "${WORK_DIR}" -maxdepth 1 -type d)
+done < <(LC_ALL=C find "${WORK_DIR}" -maxdepth 1 -type d)
 
 exit 0
