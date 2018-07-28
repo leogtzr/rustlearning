@@ -1,0 +1,6 @@
+[package]
+name = "data_inside_enum_2"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]

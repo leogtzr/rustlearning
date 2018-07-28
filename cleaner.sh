@@ -2,7 +2,7 @@
 
 readonly WORK_DIR=$(dirname $(readlink --canonicalize-existing "${0}"))
 
-while read dir; do
+time while read dir; do
 	echo -n "Cleaning: ${dir}"
 	(
 		cd "${dir}"
