@@ -4,8 +4,6 @@ fn main() {
 	match some_u8_value {
 		1 => println!("Uno"),
 		2 => println!("Dos"),
-		_ => {
-			println!("Cualquier otro valor ... ");
-		}
+		_ => (),
 	}
 }

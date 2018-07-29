@@ -5,7 +5,7 @@ enum Coin {
 	Quarter,
 }
 
-fn value_in_cents(coin: Coin) -> u32 {
+fn value_in_cents(coin: &Coin) -> u32 {
 	match coin {
 		/*
 			match arms:
@@ -23,6 +23,14 @@ fn value_in_cents(coin: Coin) -> u32 {
 fn main() {
 
 	let coin: Coin = Coin::Penny;
-	println!("{:?}", value_in_cents(coin));
+	println!("{:?}", value_in_cents(&coin));
+
+	let mut count = 0;
+	match coin {
+		Coin::Dime => println!("Dime!"),
+		_ => count += 3,
+	}
+
+	println!("{:?}", count);
 
 }
