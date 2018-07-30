@@ -1,0 +1,4 @@
+[[package]]
+name = "a_series_of_nested_modules"
+version = "0.1.0"
+
