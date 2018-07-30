@@ -1,0 +1,6 @@
+[package]
+name = "bringing_names_into_scope"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
