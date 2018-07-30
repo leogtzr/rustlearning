@@ -1,6 +1,3 @@
-pub mod client;					// We are still declaring the module here.
-pub mod network;
-
 #[cfg(test)]
 mod tests {
     #[test]
