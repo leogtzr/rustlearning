@@ -1,0 +1,6 @@
+[package]
+name = "an_enum_to_store_diff_values"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
