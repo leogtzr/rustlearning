@@ -1,0 +1,6 @@
+[package]
+name = "indexing_into_strings"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
