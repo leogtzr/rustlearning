@@ -1,0 +1,6 @@
+[package]
+name = "hashmaps_and_ownership"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]

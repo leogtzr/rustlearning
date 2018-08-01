@@ -1,0 +1,6 @@
+[package]
+name = "creating_a_hashmap_using_collect"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
