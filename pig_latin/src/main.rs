@@ -5,16 +5,17 @@ fn car_cdr(s: &str) -> (&str, &str) {
     }
 }
 
+fn pig(s: &str) -> String {
+	let (first, remainder) = car_cdr(s);
+
+	let x = match first as &str {
+		"a" | "e" | "i" | "o" | "u" => format!("{}-hay", s),
+		_ => format!("{}-{}ay", remainder, first)
+	};
+	x
+}
+
 fn main() {
 	let s = String::from("apple");
-	let (first, remainder) = car_cdr(&s);
-	
-	match first as &str {
-		"a" | "e" | "i" | "o" | "u" => {
-			println!("{}", format!("{}-hay", s));
-		},
-		_ => {
-			println!("{}", format!("{}-{}ay", remainder, first));
-		}
-	}
+	println!("{}", pig(&s));
 }
