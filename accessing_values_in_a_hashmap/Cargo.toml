@@ -1,0 +1,6 @@
+[package]
+name = "accessing_values_in_a_hashmap"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
