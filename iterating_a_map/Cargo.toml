@@ -1,0 +1,6 @@
+[package]
+name = "iterating_a_map"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
