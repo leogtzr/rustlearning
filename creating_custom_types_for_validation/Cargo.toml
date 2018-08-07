@@ -1,0 +1,6 @@
+[package]
+name = "creating_custom_types_for_validation"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]

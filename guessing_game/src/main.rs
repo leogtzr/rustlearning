@@ -23,13 +23,18 @@ fn main() {
 		// trim() eliminates the new line.
 		// :type -> we are anotating the variable with a type.
 
-		let guess: u32 = match guess.trim().parse() {
+		let guess: i32 = match guess.trim().parse() {
 			Ok(num) => num,
 			Err(_) => {
 				println!("Enter a valid number! :@");
 				continue;
 			}
 		};
+
+		if guess < 1 || guess > 100 {
+			println!("The number will be between 1 and 100");
+			continue;
+		}
 
 		//io::stdin().read_line(&mut guess).expect("Failed to read line");
 		println!("You guessed: {}", guess);
