@@ -1,5 +1,6 @@
 extern crate media_aggregator;
 
+use media_aggregator::Summary;
 use media_aggregator::Tweet;
 
 fn main() {
@@ -21,4 +22,6 @@ fn main() {
 		retweet: String::from("sdfsdf"),
 	};
 	println!("{:?}", tweet);
+
+	println!("{}", tweet.summary());
 }
