@@ -1,0 +1,6 @@
+[package]
+name = "largest_number_in_a_list"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
