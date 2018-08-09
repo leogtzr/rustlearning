@@ -1,4 +1,4 @@
-extern crate rand;
+extern crate media_aggregator;
 
 use rand::distributions::{IndependentSample, Range};
 

@@ -1,0 +1,6 @@
+[package]
+name = "defining_a_type"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
