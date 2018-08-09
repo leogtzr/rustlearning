@@ -1,5 +1,7 @@
 pub trait Summary {
-	fn summary(&self) -> String;
+	fn summary(&self) -> String {
+		String::from("(Read more ... )")
+	}
 }
 
 #[derive(Debug)]

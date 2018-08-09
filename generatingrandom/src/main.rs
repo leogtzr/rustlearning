@@ -1,5 +1,3 @@
-extern crate media_aggregator;
-
 use rand::distributions::{IndependentSample, Range};
 
 fn main() {
