@@ -5,9 +5,6 @@ fn to_celcius(fah: f64) -> f64 {
 }
 
 fn main() {
-   // print!("Fah: ");
-   // let mut fah = String::new();
-   // io::stdin().read_line(&mut fah).expect("Failed to read line");
 
    loop {
    		println!("Input the fah: ");
