@@ -1,6 +1,13 @@
-fn largest(lst: &Vec<i32>) -> i32 {
+//fn largest(lst: &Vec<i32>) -> i32 {
+fn largest(lst: &[i32]) -> i32 {
 	let mut largest = lst[0];
-	for &number in lst {
+	// for &number in lst {
+	// 	if number > largest {
+	// 		largest = number;
+	// 	}
+	// }
+
+	for &number in lst.iter() {
 		if number > largest {
 			largest = number;
 		}
