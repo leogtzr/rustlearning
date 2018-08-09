@@ -1,13 +1,15 @@
 use std::cmp::PartialOrd;
 
 //fn largest<T: PartialOrd + Copy>(lst: &[T]) -> T {
-fn largest<T>(lst: &[T]) -> T where T: PartialOrd + Copy {
-	let mut largest = lst[0];
-	for &i in lst.iter() {
+fn largest<T>(lst: &[T]) -> &T where T: PartialOrd {
+	let mut largest = &lst[0];
+
+	for i in lst {
 		if i > largest {
 			largest = i;
 		}
 	}
+
 	largest
 }
 
