@@ -1,0 +1,6 @@
+[package]
+name = "preventing_dangling_references_with_lifetimes"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]

@@ -27,6 +27,10 @@ impl<T: Display + PartialOrd> Pair<T> {
 	}
 }
 
+// impl<T: Display> ToString for T {
+// 	// --snip--
+// }
+
 fn main() {
 	let pair = Pair{x: 2, y: 6};
 	pair.cmp_display();

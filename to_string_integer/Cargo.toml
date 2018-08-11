@@ -1,0 +1,6 @@
+[package]
+name = "to_string_integer"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
