@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 #[derive(Debug)]
 struct ImportantExcerpt<'a> {
 	part: &'a str,
@@ -15,6 +17,17 @@ impl<'a> ImportantExcerpt<'a> {
 		self.part    				// the return lifetime is not specified
 									// but based on the rules self's elision
 									// lifetime is assigned here.
+	}
+}
+
+fn longest_with_an_announcement<'a, T>(x: &'a str, y: &'a str, ann: T) -> 
+	&'a str where T: Display {
+	println!("Announcement: {}", ann);
+
+	if x.len() > y.len() {
+		x
+	} else {
+		y
 	}
 }
 
