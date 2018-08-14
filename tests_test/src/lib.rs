@@ -12,4 +12,11 @@ mod tests {
 		assert_eq!(4, add_two(2));
 	}
 
+	// The following test will be ignored due to the use of #[ignore]	
+	#[test]
+	#[ignore]
+	fn add_one() {
+		assert_eq!(2, add_two(0));
+	}
+
 }
