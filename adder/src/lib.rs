@@ -49,7 +49,7 @@ mod tests {
     #[test]
     fn greeting_contains_name() {
     	let result = greeting("Carol");
-    	assert!(result.contains("Carols"), "Alv: {}", result);
+    	assert!(result.contains("Carol"), "Alv: {}", result);
     }
 
 }
