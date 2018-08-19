@@ -1,5 +1,5 @@
 [package]
-name = "reading_a_file"
+name = "minigrep"
 version = "0.1.0"
 authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
 
