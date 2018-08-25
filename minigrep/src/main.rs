@@ -1,7 +1,7 @@
 extern crate minigrep;
 
 use std::env;
-use std::error::Error;
+// use std::error::Error;
 use std::process;
 
 fn main() {
@@ -17,16 +17,3 @@ fn main() {
     };
 }
 
-mod test {
-    use super::*;
-
-    #[test]
-    fn one_result() {
-        let query = "duct";
-        let contents = "\
-        Rust:
-        safe, fast, productive.
-        Pick three.";
-        assert_eq!(vec!["safe, fast, productive."], search(query, contents));
-    }
-}
