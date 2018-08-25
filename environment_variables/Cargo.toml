@@ -1,0 +1,6 @@
+[package]
+name = "environment_variables"
+version = "0.1.0"
+authors = ["leogtzr <leogutierrezramirez@gmail.com>"]
+
+[dependencies]
