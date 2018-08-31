@@ -1,7 +1,7 @@
 extern crate minigrep;
 
 use std::env;
-// use std::error::Error;
+use std::error::Error;
 use std::process;
 
 fn main() {
