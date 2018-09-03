@@ -26,9 +26,6 @@ impl<T> Cacher<T> where T: Fn(u32) -> u32 {
 }
 
 fn main() {
-    //let calc = |x: u32| x;
-    //let cacher = Cacher{calculation: calc, value: Some(3)};
-    
     let mut c = Cacher::new(|x|x);
     let x = c.value(45);
     println!("x: {}", x);
