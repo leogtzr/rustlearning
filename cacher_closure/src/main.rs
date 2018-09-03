@@ -3,8 +3,36 @@ struct Cacher<T> where T: Fn(u32) -> u32 {
     value: Option<u32>,
 }
 
+impl<T> Cacher<T> where T: Fn(u32) -> u32 {
+
+    fn new(calculation: T) -> Cacher<T> {
+        Cacher {
+            calculation,
+            value: None,
+        }
+    }
+
+    fn value(&mut self, arg: u32) -> u32 {
+        match self.value {
+            Some(v) => v,
+            None => {
+                let v = (self.calculation)(arg);
+                self.value = Some(v);
+                v
+            },
+        }
+    }
+
+}
+
 fn main() {
-    let calc = |x: u32| x;
-    let cacher = Cacher{calculation: calc, value: Some(3)};
-    // let y = cacher::calculation(34);
+    //let calc = |x: u32| x;
+    //let cacher = Cacher{calculation: calc, value: Some(3)};
+    
+    let mut c = Cacher::new(|x|x);
+    let x = c.value(45);
+    println!("x: {}", x);
+
+    let y = c.value(56);
+    println!("y: {}", y);
 }
