@@ -32,4 +32,7 @@ fn main() {
 
     let y = c.value(56);
     println!("y: {}", y);
+
+    let mut cacher = Cacher::new(|vx| 1 + vx);
+    println!("cache value: {}", cacher.value(32));
 }
